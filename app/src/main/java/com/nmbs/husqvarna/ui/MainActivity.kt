@@ -1,11 +1,9 @@
-package com.nmbs.husqvarna
+package com.nmbs.husqvarna.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.core.view.WindowCompat
-import com.nmbs.husqvarna.ui.HusqvarnaApp
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

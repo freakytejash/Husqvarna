@@ -9,11 +9,13 @@ import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.SideEffect
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.tooling.preview.Preview
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import com.nmbs.husqvarna.theme.DemoTheme
 import com.nmbs.husqvarna.utils.DateFormatter
 import com.nmbs.husqvarna.utils.TimeFormatter
 
+@Preview
 @Composable
 fun HusqvarnaApp() {
     val useDarkTheme = isSystemInDarkTheme()
@@ -36,6 +38,7 @@ fun HusqvarnaApp() {
                         .only(WindowInsetsSides.Horizontal + WindowInsetsSides.Top)
                 )
         ) {
+            NavGraph()
         }
     }
 
